@@ -1,0 +1,751 @@
+﻿<!DOCTYPE html>
+
+<<link href="StyleSheet1.css" rel="stylesheet" />
+<link href="StyleSheet1.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style>
+        #grad1 {
+            height: 2500px;
+            background-color: #cccccc;
+            background-image: linear-gradient(to right,#4B0150,#ee7600 );
+        }
+    </style>
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover {
+                    background-color: #111;
+                }
+    </style>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+
+        <li><a href="#Report">Report a disaster</a></li>
+        <li><a href="#Donation">Donate funds!</a></li>
+        <li><a href="#goods">Donate goods</a></li>
+        <li><a href="#view">View disasters</a></li>
+        <li><a href="#mdonation">View monetary donations</a></li>
+
+    </ul>
+
+    <style>
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+
+
+    <div id="grad1">
+
+
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_5terre.jpg">
+                    <img src="https://www.inquirer.com/resizer/jp0Jd_Vz15y97GjC7W1acCjxaAc=/700x467/smart/filters:format(webp)/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/D2LTRFIHZZEXTAJ55QIZBWGJEU.jpg" width="600" height="200">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_forest.jpg">
+                    <img src="https://img1.wsimg.com/isteam/stock/5501/:/rs=w:400,cg:true,m/qt=q:66" width="600" height="400">
+                </a>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                    <img src="https://www.verywellfamily.com/thmb/B4bvX2S8YdziqzTFYf6S88qVsRY=/500x350/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1306629971-ac046b93a1f74306b65b079aed470cf6.jpg" width="600" height="400">
+                </a>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="https://cdn.vox-cdn.com/thumbor/uI4X83p7-WShNFqFwbUE7iynaQY=/0x0:3000x2000/920x613/filters:focal(1260x760:1740x1240):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/62337965/881859504.jpg.0.jpg" width="600" height="400">
+                </a>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <style>
+            div {
+                margin-bottom: 15px;
+                padding: 4px 12px;
+            }
+
+            .danger {
+                border-left: 6px solid #f44336;
+                background-color: dimgray;
+            }
+        </style>
+
+        <h1 id="Report" style="font-size:40px;">Would you like to report a new disaster?</h1>
+        <div class="danger">
+            <p>
+                <strong>
+                    This program is pre configured with the following categories of goods:
+                    A. Clothes
+                    B. Non-perishiables
+                </strong>
+            </p>
+        </div>
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: dimgray;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Full-width input fields */
+            input[type=text], input[type=password] {
+                width: 400px;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                input[type=text]:focus, input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            hr {
+                border: 1px solid white;
+                margin-bottom: 25px;
+            }
+
+            /* Set a style for all buttons */
+            button {
+                background-color: dimgray;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 40px;
+                opacity: 0.9;
+                right: 300px;
+            }
+
+                button:hover {
+                    opacity: 1;
+                }
+
+            /* Extra styles for the cancel button */
+            .cancelbtn {
+                padding: 14px 20px;
+                background-color: #f44336;
+            }
+
+            /* Float cancel and signup buttons and add an equal width */
+            .cancelbtn, .signupbtn {
+                float: left;
+                width: 80px;
+            }
+
+            /* Add padding to container elements */
+            .container {
+                padding: 16px;
+            }
+
+            /* Clear floats */
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            /* Change styles for cancel button and signup button on extra small screens */
+            @media screen and (max-width: 300px) {
+                .cancelbtn, .signupbtn {
+                    width: 40px;
+                }
+            }
+        </style>
+        <form action="/action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+                <h1>Please remain as accurate as possible</h1>
+                <hr>
+
+                <label for="email"><b></b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="email"><b></b></label>
+                <input type="text" placeholder="Description of disaster" name="email" required>
+
+                <label for="email"><b></b></label>
+                <input type="text" placeholder="Date reported dd/mm/yyyy" name="email" required>
+
+                <style>
+                    .dropbtn {
+                        background-color: dimgray;
+                        color: white;
+                        padding: 16px;
+                        font-size: 16px;
+                        border: none;
+                        cursor: pointer;
+                        width: 100px;
+                    }
+
+                    .dropdown {
+                        position: relative;
+                        display: inline-block;
+                    }
+
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                    }
+
+                        .dropdown-content a {
+                            color: black;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+                        }
+
+                            .dropdown-content a:hover {
+                                background-color: dimgray;
+                            }
+
+                    .dropdown:hover .dropdown-content {
+                        display: block;
+                    }
+
+                    .dropdown:hover .dropbtn {
+                        background-color: dimgray;
+                    }
+                </style>
+
+                <h2>Hover over to view Disaster aids availible</h2>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">View Disaster Aids</button>
+                    <div class="dropdown-content">
+                        <a href="#">Water</a>
+                        <a href="#">Clothing</a>
+                        <a href="#">Non-Perishable</a>
+                        <a href="#">Funds</a>
+                        <div class="clearfix">
+                            <button style: type="submit" class="signupbtn">Submit </button>
+                        </div>
+                    </div>
+                </div>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> remain anonymous?
+            </div>
+        </form>
+
+
+        <style>
+            body {
+                font-family: Arial;
+                font-size: 17px;
+                padding: 8px;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .row {
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+                margin: 0 -16px;
+            }
+
+            .col-25 {
+                -ms-flex: 25%; /* IE10 */
+                flex: 25%;
+            }
+
+            .col-50 {
+                -ms-flex: 50%; /* IE10 */
+                flex: 50%;
+            }
+
+            .col-75 {
+                -ms-flex: 75%; /* IE10 */
+                flex: 75%;
+            }
+
+            .col-25,
+            .col-50,
+            .col-75 {
+                padding: 0 16px;
+            }
+
+            .container {
+                background-image: linear-gradient(to right,#ee7600, #4B0150);
+                padding: 5px 20px 15px 20px;
+                border: 1px solid lightgrey;
+                border-radius: 3px;
+            }
+
+            input[type=text] {
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            label {
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            .icon-container {
+                margin-bottom: 20px;
+                padding: 7px 0;
+                font-size: 24px;
+            }
+
+            .btn {
+                background-color: darkslategray;
+                color: white;
+                padding: 12px;
+                margin: 10px 0;
+                border: none;
+                width: 400px;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 17px;
+            }
+
+                .btn:hover {
+                    background-color: #45a049;
+                }
+
+            a {
+                color: #2196F3;
+            }
+
+            hr {
+                border: 1px solid lightgrey;
+            }
+
+            span.price {
+                float: right;
+                color: grey;
+            }
+
+            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+            @media (max-width: 800px) {
+                .row {
+                    flex-direction: column-reverse;
+                }
+
+                .col-25 {
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+
+        <h1 id="Donation"style="font-size:40px;">Would you like to donate to a good cause?</h1>
+        <div class="danger">
+            <p>
+                <strong>
+                    This program is pre configured with the following categories of goods:
+                    A. Clothes
+                    B. Non-perishiables
+                </strong>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                    <form action="/action_page.php">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="email" placeholder="john@example.com">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                <label for="city"><i class="fa fa-institution"></i> City</label>
+                                <input type="text" id="city" name="city" placeholder="Port Elizabeth">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" name="state" placeholder="PE">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="zip">Zip</label>
+                                        <input type="text" id="zip" name="zip" placeholder="10001">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-50">
+                                <h3>Payment</h3>
+                                <label for="fname">Accepted Cards</label>
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                <label for="expmonth">Exp Month</label>
+                                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Exp Year</label>
+                                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <label>
+                            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                        </label>
+                        <input type="submit" value="Continue to checkout" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+
+            input[type=submit] {
+                background-color: #04AA6D;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                input[type=submit]:hover {
+                    background-color: #45a049;
+                }
+
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+        </style>
+        <h1 id="goods" style="font-size:40px;">Would you like to donate goods?</h1>
+        <div class="danger">
+            <p>
+                <strong>
+                    This program is pre configured with the following categories of goods:
+                    A. Clothes
+                    B. Non-perishiables
+                </strong>
+            </p>
+        </div>
+
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Disaster type</label>
+                <select id="country" name="country">
+                    <option value="australia">Earthquake</option>
+                    <option value="canada">Flooding</option>
+                    <option value="usa">Fire</option>
+                </select>
+
+                <h2>Hover over to view Disaster aids availible</h2>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">View Disaster Aids</button>
+                    <div class="dropdown-content">
+                        <a href="#">Water</a>
+                        <a href="#">Clothing</a>
+                        <a href="#">Non-Perishable</a>
+                        <a href="#">Funds</a>
+                        <div class="clearfix">
+                            <button style: type="submit" class="signupbtn">Submit </button>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div id="grad1">
+
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: darkslategray;
+            }
+        </style>
+
+        <h1 id="view" style="font-size:40px;">View ongoing disasters</h1>
+        <div class="danger">
+            <p>
+                <strong>
+                    This program is pre configured with the following categories of goods:
+                    A. Clothes
+                    B. Non-perishiables
+                </strong>
+            </p>
+        </div>
+
+
+        <table style="width:600px">
+            <tr>
+                <th>Disaster</th>
+                <th>Date</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>KZN Floods</td>
+                <td>April 22'- August</td>
+                <td>Since the 11th odf April KZN has experinced lofe threatening floods, extremely heavy rainfall caused dangerous flooding and landslides to the province</td>
+            </tr>
+            <tr>
+                <td>Dessenhoek house fire</td>
+                <td>8 September 22</td>
+                <td>A family recently lost everything in a house fire, support and donations are needed, as everything burnt down, the family is now struggling to support eachother due to this</td>
+
+            </tr>
+            <tr>
+                <td>Covid19 Food relief</td>
+                <td>March 22</td>
+                <td>Bring hope to many in distress who were affected by the covid 19 lockdown, towns in KZN have still not recovered and are fighting starvation on a daily basis</td>
+
+            </tr>
+
+        </table>
+
+        <div class="danger">
+            <p>
+                <strong>
+                    Images of ongoing disasters
+                </strong>
+            </p>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_5terre.jpg">
+                    <img src="https://966314.smushcdn.com/2761096/wp-content/uploads/2021/09/Sept-SM-5-400x250.jpg?lossy=1&strip=1&webp=1" width="600" height="200">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                    <img src="https://966314.smushcdn.com/2761096/wp-content/uploads/2020/08/1-400x250.jpg?lossy=1&strip=1&webp=1" width="600" height="400">
+                </a>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="https://966314.smushcdn.com/2761096/wp-content/uploads/2018/11/wa14-400x250.jpeg?lossy=1&strip=1&webp=1" width="600" height="400">
+                </a>
+            </div>
+        </div>
+
+
+        <div>
+
+
+            <style>
+                table {
+                    font-family: arial, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+
+                td, th {
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding: 8px;
+                }
+
+                tr:nth-child(even) {
+                    background-color: darkslategray;
+                }
+            </style>
+
+            <h1 id="mdonation" style="font-size:40px;">View monetary donations</h1>
+            <div class="danger">
+                <p>
+                    <strong>
+                        This program is pre configured with the following categories of goods:
+                        A. Clothes
+                        B. Non-perishiables
+                    </strong>
+                </p>
+            </div>
+
+
+            <table style="width:1647px">
+                <tr>
+                    <th>Monetary donation</th>
+                    <th>Incoming goods</th>
+                    <th>Disaster reported</th>
+                </tr>
+                <tr>
+                    <td>Jack +R250</td>
+                    <td>Water provision</td>
+                    <td>Funds donated toward water provision</td>
+                </tr>
+                <tr>
+                    <td>Sarah +R1000</td>
+                    <td>Canned goods</td>
+                    <td>Funds donated toward canned goods</td>
+
+                </tr>
+                <tr>
+                    <td>William +R750</td>
+                    <td>Clothing</td>
+                    <td>Funds donated toward clothing</td>
+
+                </tr>
+            </table>
+
+        </div>
+
+
+
+
+    </div>  
+      
+</html>
